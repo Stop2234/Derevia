@@ -1,0 +1,58 @@
+.Reg_Window {
+    text-align: right;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.down_Reg_Window{
+    width: 100x;
+    height: 75px;
+}
+
+.Kontakt_Info {
+    float: left;
+    width: 49%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Filter {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Search {
+    clear: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Contaner_Boxs{
+    width: 200px;
+    hight: 500px;
+}
+
+.grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+}
+
+.grid div {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
