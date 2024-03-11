@@ -11,33 +11,20 @@
 }
 
 .Kontakt_Info {
-    float: left;
-    width: 49%;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box;
+    border: none;
+    background-color: #c68642;
+    color: white;
+    padding: 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.Filter {
-    float: left;
-    width: 20%;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box;
-}
 
-.Search {
-    clear: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box;
-}
+
+
 
 .Contaner_Boxs{
     width: 200px;
@@ -49,26 +36,86 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 5px;
+    align-items: center;
 }
 
 .grid div {
-    background-color: #f0f0f0;
-    padding: 20px;
+    margin: 100ph;
     box-sizing: border-box;
 }
-.bt1 {
-    background-image: url('E:\Project_Wood\Photo all\Dyb\dyb_red.jpg');
-    background-size: cover; 
-    background-position: center; 
+.search-box {
+    display: inline-block;
+    background-color: #efe6dd;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-input {
     border: none;
-    color: white;
-    padding: 10px 20px; 
+    background-color: transparent;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    cursor: pointer;
     outline: none;
-    border-radius: 5px; 
+    width: 200px;
+}
+
+.search-button {
+    border: none;
+    background-color: #c68642;
+    color: white;
+    padding: 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #a56d36;
+}
+.bt1 {
+    background-color: #c68642;
+    color: white;
+    padding: 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url('Photo all\Dyb\Дуб_черешчатый.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .bt1:hover {
-    opacity: 0.8; 
+    background-color: #a56d36;
+}
+
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter-button {
+    background-color: #c68642;
+    color: white;
+    padding: 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button.active {
+    background-color: #a56d36;
 }
