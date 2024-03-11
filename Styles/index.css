@@ -41,7 +41,7 @@
 
 .Contaner_Boxs{
     width: 200px;
-    hight: 500px;
+    height: 500px;
 }
 
 .grid {
@@ -55,4 +55,20 @@
     background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
+}
+.bt1 {
+    background-image: url('E:\Project_Wood\Photo all\Dyb\dyb_red.jpg');
+    background-size: cover; 
+    background-position: center; 
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px; 
+}
+
+.bt1:hover {
+    opacity: 0.8; 
 }
