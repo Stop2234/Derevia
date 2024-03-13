@@ -11,7 +11,8 @@ $dbconn = pg_connect("host=$servername dbname=$dbname user=$username password=$p
 // Проверка соединения
 if (!$dbconn) {
     die("Connection failed: " . pg_last_error());
-}
+} echo "Подключение к БД прошло успешно.";
 
-// Закрываем соединение с базой данных
-pg_close($dbconn);
+
+
+
