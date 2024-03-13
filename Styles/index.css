@@ -6,7 +6,7 @@
 }
 
 .down_Reg_Window{
-    width: 100x;
+
     height: 75px;
 }
 
@@ -86,9 +86,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: url('Photo all\Dyb\Дуб_черешчатый.jpg');
-    background-size: contain; 
-    background-repeat: no-repeat;
+    background-size:contain;
+    background-repeat:no-repeat;
     background-position: center bottom;
 }
 

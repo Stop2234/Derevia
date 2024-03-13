@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-<div class="Reg_Window">
-       <div class = "up_Reg_Window" ><button>Зарегистрироватсья</button></div>
-            <div class = "down_Reg_Window"><button>Авторизоваться</button></div>
-</div>
 <div class="Kontakt_Info">
     Kontakt_info (Top Contact Information)
 </div>
@@ -44,5 +40,18 @@
 
     </div>
  </div>
+    <form action="Authorization/register.php" method="post">
+        <input type="text" placeholder="login" name="login">
+        <input type="text" placeholder="passwrod" name="pass">
+        <input type="text" placeholder="repeat password" name="repeatpass">
+        <input type="text" placeholder="email" name="email">
+        <button type="submit">Заргеистрироватсья</button>
+    </form>
+
+<form action="Authorization/login.php" method="post">
+    <input type="text" placeholder="login" name="login">
+    <input type="text" placeholder="passwrod" name="pass">
+    <button type="submit">Войти</button>
+</form>
 </body>
 </html>
