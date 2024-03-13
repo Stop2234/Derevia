@@ -1,5 +1,5 @@
 <?php
-require_once('../db.php');
+require_once('db.php');
 
 $name = $_POST['login'];
 $password = $_POST['pass']; // Исправлено с 'password' на 'pass'
