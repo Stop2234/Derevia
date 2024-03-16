@@ -22,7 +22,6 @@ if (empty($login) || empty($password) || empty($repeat_password) || empty($email
         } else {
             echo "Ошибка!";
         }
-        var_dump($result);
         pg_close($dbconn);
     }
 }
