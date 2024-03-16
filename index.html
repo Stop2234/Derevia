@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Woodland_3</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
 </div>
  <div class = 'container'>
     <div class="grid">
-        <button class="bt1">
+        <button class="bt1" onclick="openForm()">
             Березовые
         </button>
         <button class="bt1">
@@ -40,7 +41,8 @@
 
     </div>
  </div>
-<form action="Authorization/register.php" method="post">
+<div class="form-container">
+<form action="Authorization/register.php" method="post" class="Register">
     <input type="text" placeholder="login" name="login">
     <input type="text" placeholder="password" name="password">
     <input type="text" placeholder="repeat_password" name="repeat_password">
@@ -49,10 +51,12 @@
 </form>
 
 
-<form action="Authorization/login.php" method="post">
+<form action="Authorization/login.php" method="post" class="login">
     <input type="text" placeholder="login" name="login">
     <input type="text" placeholder="password" name="password">
     <button type="submit">Войти</button>
 </form>
+</div>
+
 </body>
 </html>

@@ -1,9 +1,8 @@
 <?php
 
-// Подключаем файл для работы с базой данных
+
 require_once('db.php');
 
-// Получаем значения логина и пароля из POST-запроса
 $login = pg_escape_string($_POST["login"]);
 $password = pg_escape_string($_POST["password"]);
 
@@ -25,4 +24,4 @@ if (empty($login) || empty($password)) {
         echo "Нет такого пользователя";
     }
 }
-?>
+

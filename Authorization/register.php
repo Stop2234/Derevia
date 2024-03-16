@@ -25,4 +25,4 @@ if (empty($login) || empty($password) || empty($repeat_password) || empty($email
         pg_close($dbconn);
     }
 }
-?>
+
