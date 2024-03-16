@@ -1,14 +1,29 @@
 <?php
 require_once('db.php');
 
-$name = $_POST['login'];
-$password = $_POST['pass']; // Исправлено с 'password' на 'pass'
-$repeat_password = $_POST['repeatpass']; // Исправлено с 'repeat_password' на 'repeatpass'
+$login = $_POST['login'];
+$password = $_POST['password'];
+$repeat_password = $_POST['repeat_password'];
 $email = $_POST['email'];
 
-$SQL = "INSERT INTO register (login, password, repeat_password, email) VALUES ('$name', '$password', '$repeat_password', '$email')";
-$result = pg_query($dbconn, $SQL);
 
-var_dump($result);
+if (empty($login) || empty($password) || empty($repeat_password) || empty($email)) {
+    var_dump($login, $password, $repeat_password, $email);
 
-pg_close($dbconn);
+    echo "Заполните все поля!";
+} else {
+    if ($password != $repeat_password) {
+        echo "Пароли не совпадают!";
+    } else {
+        $SQL = "INSERT INTO register (login, password, repeat_password, email) VALUES ('$login', '$password', '$repeat_password', '$email')";
+        $result = pg_query($dbconn, $SQL);
+        if ($result === TRUE) {
+            echo "Успешная регистрация!";
+        } else {
+            echo "Ошибка!";
+        }
+        var_dump($result);
+        pg_close($dbconn);
+    }
+}
+?>
