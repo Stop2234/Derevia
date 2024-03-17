@@ -10,19 +10,42 @@
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
+<div>
 <div class="Kontakt_Info">
     Kontakt_info (Top Contact Information)
 </div>
+<div class="form-container">
+    <form action="Authorization/register.php" method="post" class="Register">
+        <input type="text" placeholder="login" name="login">
+        <input type="text" placeholder="password" name="password">
+        <input type="text" placeholder="repeat_password" name="repeat_password">
+        <input type="text" placeholder="email" name="email">
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    
+    
+    <form action="Authorization/login.php" method="post" class="login">
+        <input type="text" placeholder="login" name="login">
+        <input type="text" placeholder="password" name="password">
+        <button type="submit">Войти</button>
+    </form>
+    </div>
+</div>
+<div class="container">
+    <div class="search-box">
+        <input type="text" placeholder="Поиск..." class="search-input">
+        <button class="search-button">Найти</button>
+    </div>
+    </div>
+
+    
 <div class="filter-menu">
     <button class="filter-button active">Фильтр 1</button>
     <button class="filter-button">Фильтр 2</button>
     <button class="filter-button">Фильтр 3</button>
 </div>
 </div>
-<div class="search-box">
-    <input type="text" placeholder="Поиск..." class="search-input">
-    <button class="search-button">Найти</button>
-</div>
+
 </div>
  <div class = 'container_Boxs'>
     <div class="grid">
@@ -57,22 +80,6 @@
 
     </div>
  </div>
-<div class="form-container">
-<form action="Authorization/register.php" method="post" class="Register">
-    <input type="text" placeholder="login" name="login">
-    <input type="text" placeholder="password" name="password">
-    <input type="text" placeholder="repeat_password" name="repeat_password">
-    <input type="text" placeholder="email" name="email">
-    <button type="submit">Зарегистрироваться</button>
-</form>
-
-
-<form action="Authorization/login.php" method="post" class="login">
-    <input type="text" placeholder="login" name="login">
-    <input type="text" placeholder="password" name="password">
-    <button type="submit">Войти</button>
-</form>
-</div>
 
 </body>
 </html>

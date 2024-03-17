@@ -12,18 +12,28 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 1450px;
 }
 
-
+.grid 
+{position:relative;
+right: 400px;
+top:100px;}
 .grid div {
     margin: 100px;
     box-sizing: border-box;
+}
+.container{
+    position: relative;
 }
 .search-box {
     display: inline-block;
     background-color: #efe6dd;
     border-radius: 20px;
     padding: 10px;
+    display: flex;
+    position:absolute;
+    right: 1550px;
 }
 
 .search-input {
@@ -76,6 +86,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    top: 240px;
 }
 
 .filter-button {
@@ -83,7 +95,7 @@
     color: white;
     padding: 15px 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -106,4 +118,39 @@
 }
 .aaa {
     text-decoration: None;
+}
+
+.form-container {
+    position: relative;
+    top:70px;
+    background-color: #f0ead6; 
+    border: 1px solid #c8bfa9; 
+    border-radius: 10px; 
+    padding: 20px;
+    max-width: 400px; 
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #888888;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+form {
+    margin-bottom: 20px;
+}
+input[type="text"], button {
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #c8bfa9; 
+    border-radius: 5px; 
+    background-color: #fff;
+    color: #5f4d38; 
+}
+button {
+    background-color: #5f4d38;
+    color: #fff; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #9e8a69; 
 }
