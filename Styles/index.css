@@ -12,28 +12,18 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 1450px;
 }
 
-.grid 
-{position:relative;
-right: 400px;
-top:100px;}
+
 .grid div {
     margin: 100px;
     box-sizing: border-box;
-}
-.container{
-    position: relative;
 }
 .search-box {
     display: inline-block;
     background-color: #efe6dd;
     border-radius: 20px;
     padding: 10px;
-    display: flex;
-    position:absolute;
-    right: 1550px;
 }
 
 .search-input {
@@ -86,8 +76,6 @@ top:100px;}
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
-    top: 240px;
 }
 
 .filter-button {
@@ -95,7 +83,7 @@ top:100px;}
     color: white;
     padding: 15px 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -120,37 +108,119 @@ top:100px;}
     text-decoration: None;
 }
 
-.form-container {
-    position: relative;
-    top:70px;
-    background-color: #f0ead6; 
-    border: 1px solid #c8bfa9; 
-    border-radius: 10px; 
-    padding: 20px;
-    max-width: 400px; 
-    margin: 0 auto;
-    box-shadow: 2px 2px 5px #888888;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-form {
-    margin-bottom: 20px;
-}
-input[type="text"], button {
-    padding: 10px; 
-    margin-bottom: 10px; 
-    border: 1px solid #c8bfa9; 
-    border-radius: 5px; 
-    background-color: #fff;
-    color: #5f4d38; 
-}
+/* Общие стили для кнопок */
 button {
-    background-color: #5f4d38;
-    color: #fff; 
-    cursor: pointer; 
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #9e8a69; 
+/* Стили для кнопки Зарегистрироваться */
+#openRegisterModal {
+    background-color: #FF4500; /* Оранжево-красный */
 }
+
+/* Стили для кнопки Войти */
+#openLoginModal {
+    background-color: #FF8C00; /* Темно-оранжевый */
+}
+
+/* При наведении на кнопку */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Стили для форм */
+form {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #FFE4B5; /* Мокка */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #FF4500; /* Оранжево-красный */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF6347; /* Темно-оранжевый */
+}
+
+/* Стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1); /* Полупрозрачный оранжевый */
+}
+
+.modal-content {
+    background-color: #FFE4B5; /* Мокка */
+    margin: 10% auto; /* Центрирование по вертикали и горизонтали */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Анимация для модальных окон */
+@keyframes modal-appear {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content {
+    animation: modal-appear 0.3s ease-out;
+}
+

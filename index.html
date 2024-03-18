@@ -10,50 +10,27 @@
     <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
-<div>
 <div class="Kontakt_Info">
     Kontakt_info (Top Contact Information)
 </div>
-<div class="form-container">
-    <form action="Authorization/register.php" method="post" class="Register">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="password">
-        <input type="text" placeholder="repeat_password" name="repeat_password">
-        <input type="text" placeholder="email" name="email">
-        <button type="submit">Зарегистрироваться</button>
-    </form>
-    
-    
-    <form action="Authorization/login.php" method="post" class="login">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="password">
-        <button type="submit">Войти</button>
-    </form>
-    </div>
-</div>
-<div class="container">
-    <div class="search-box">
-        <input type="text" placeholder="Поиск..." class="search-input">
-        <button class="search-button">Найти</button>
-    </div>
-    </div>
-
-    
 <div class="filter-menu">
     <button class="filter-button active">Фильтр 1</button>
     <button class="filter-button">Фильтр 2</button>
     <button class="filter-button">Фильтр 3</button>
 </div>
 </div>
-
+<div class="search-box">
+    <input type="text" placeholder="Поиск..." class="search-input">
+    <button class="search-button">Найти</button>
+</div>
 </div>
  <div class = 'container_Boxs'>
     <div class="grid">
         <button class="bt1" onclick="openForm()">
             Березовые
         </button>
-        <button class="bt1">
-            Буковые
+        <button class="bt1" onclick="openForm2()">
+            Дубовые
         </button>
         <button class="bt1">
             Липовые
@@ -80,6 +57,37 @@
 
     </div>
  </div>
+<div class="auth-buttons">
+    <button id="openRegisterModal">Зарегистрироваться</button>
+    <button id="openLoginModal">Войти</button>
+</div>
+
+
+
+<div id="registerModal" class="modal">
+    <form action="Authorization/register.php" method="post">
+        <input type="text" placeholder="login" name="login">
+        <input type="password" placeholder="password" name="password">
+        <input type="password" placeholder="repeat_password" name="repeat_password">
+        <input type="text" placeholder="email" name="email">
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<div id="loginModal" class="modal">
+    <form action="Authorization/login.php" method="post">
+        <input type="text" placeholder="login" name="login">
+        <input type="password" placeholder="password" name="password">
+        <button type="submit">Войти</button>
+    </form>
+</div>
+    <script>document.getElementById('openRegisterModal').addEventListener('click', function() {
+         document.getElementById('registerModal').style.display = 'block';
+    });
+
+document.getElementById('openLoginModal').addEventListener('click', function() {
+    document.getElementById('loginModal').style.display = 'block';
+});</script>
 
 </body>
 </html>

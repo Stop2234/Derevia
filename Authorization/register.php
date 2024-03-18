@@ -19,9 +19,8 @@ if (empty($login) || empty($password) || empty($repeat_password) || empty($email
         $result = pg_query($dbconn, $SQL);
         if ($result === TRUE) {
             echo "Успешная регистрация!";
-        } else {
-            echo "Ошибка!";
         }
+
         pg_close($dbconn);
     }
 }
